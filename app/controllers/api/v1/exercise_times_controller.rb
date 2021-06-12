@@ -33,6 +33,6 @@ class Api::V1::ExerciseTimesController < ApplicationController
     private
 
     def exercise_time_params
-        params.require(:exercise_time).permit(:early_morning, :morning, :afternoon, :early_evening, :late_evening, :late_night)
+        params.require(:exercise_time).permit(:id, :early_morning, :morning, :afternoon, :early_evening, :late_evening, :late_night)
     end
 end

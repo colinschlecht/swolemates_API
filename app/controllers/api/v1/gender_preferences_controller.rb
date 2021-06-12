@@ -33,6 +33,6 @@ class Api::V1::GenderPreferencesController < ApplicationController
     private
     
     def gender_pref_params
-        params.require(:gender_preference).permit(:male, :female, :non_binary, :none)
+        params.require(:gender_preference).permit(:id, :male, :female, :non_binary, :none)
     end
 end

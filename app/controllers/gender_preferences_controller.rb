@@ -1,2 +1,0 @@
-class GenderPreferencesController < ApplicationController
-end

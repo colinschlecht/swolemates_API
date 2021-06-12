@@ -1,2 +1,0 @@
-class MatchRequestsController < ApplicationController
-end

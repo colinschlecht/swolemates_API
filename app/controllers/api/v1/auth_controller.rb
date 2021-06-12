@@ -16,7 +16,7 @@ class Api::V1::AuthController < ApplicationController
         if current_user
             render json: current_user
         else
-            render json: { errors: "No User Logged In" }
+            render json: { errors: "No user logged in" }
         end
     end
 end

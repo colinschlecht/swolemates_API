@@ -1,17 +1,17 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  early_morning: MyString
-  morning: MyString
-  afternoon: MyString
-  early_evening: MyString
-  late_evening: MyString
-  late_night: MyString
+  early_morning: false
+  morning: false
+  afternoon: false
+  early_evening: false
+  late_evening: false
+  late_night: false
 
 two:
-  early_morning: MyString
-  morning: MyString
-  afternoon: MyString
-  early_evening: MyString
-  late_evening: MyString
-  late_night: MyString
+  early_morning: false
+  morning: false
+  afternoon: false
+  early_evening: false
+  late_evening: false
+  late_night: false

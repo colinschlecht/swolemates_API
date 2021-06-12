@@ -1,0 +1,2 @@
+class GenderPreference < ApplicationRecord
+end

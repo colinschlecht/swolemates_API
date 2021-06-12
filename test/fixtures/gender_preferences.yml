@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  male: false
+  female: false
+  nonbinary: false
+  none: false
+
+two:
+  male: false
+  female: false
+  nonbinary: false
+  none: false

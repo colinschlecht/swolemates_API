@@ -1,0 +1,2 @@
+class UnmatchesController < ApplicationController
+end

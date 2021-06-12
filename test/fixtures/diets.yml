@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  keto: false
+  low_carb: false
+  vegan: false
+  vegetarian: false
+  pescatarian: false
+  alkaline: false
+  raw_food: false
+  intermittent_fasting: false
+  paleo: false
+  clean_eating: false
+  mediterranean: false
+
+two:
+  keto: false
+  low_carb: false
+  vegan: false
+  vegetarian: false
+  pescatarian: false
+  alkaline: false
+  raw_food: false
+  intermittent_fasting: false
+  paleo: false
+  clean_eating: false
+  mediterranean: false

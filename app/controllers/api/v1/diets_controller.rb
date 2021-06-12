@@ -15,11 +15,6 @@ class Api::V1::DietsController < ApplicationController
         render json: diet
     end
 
-<<<<<<< HEAD
-    # def update
-    #     diet = 
-    # end
-=======
     def update
         diet = Diet.find(params[:id])
         if diet.update(diet_params)
@@ -40,5 +35,4 @@ class Api::V1::DietsController < ApplicationController
     def diet_params
         params.require(:diet).permit(:keto, :low_carb, :vegan, :vegetarian, :pescatarian, :alkaline, :raw_food, :intermittent_fasting, :paleo, :clean_eating, :mediterranean)
     end
->>>>>>> 7708a6437b5fc7f4e002dc0fe85346b52b85eaf8
 end

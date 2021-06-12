@@ -2,7 +2,7 @@ class Api::V1::ExerciseDisciplinesController < ApplicationController
 
     def index
         disciplines = ExerciseDiscipline.all
-        render json:disciplines
+        render json: disciplines
     end
 
     def show

@@ -1,4 +1,6 @@
 def seed_users_and_attrs
+  User.destroy_all
+
   1000.times do
     random_boolean = [true, false].sample
     random_gender = ["male",

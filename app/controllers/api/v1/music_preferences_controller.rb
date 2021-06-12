@@ -33,6 +33,6 @@ class Api::V1::MusicPreferencesController < ApplicationController
     private
 
     def music_pref_params
-        params.require(:music_pref).permit(:rock, :techno, :rap, :country, :pop, :alternative, :classical, :funk, :latin, :jazz, :none)
+        params.require(:music_preference).permit(:rock, :techno, :rap, :country, :pop, :alternative, :classical, :funk, :latin, :jazz, :none)
     end
 end

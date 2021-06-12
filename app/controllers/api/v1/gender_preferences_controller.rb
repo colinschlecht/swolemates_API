@@ -2,7 +2,7 @@ class Api::V1::GenderPreferencesController < ApplicationController
 
     def index
         gender_prefs = GenderPreference.all
-        render json:diets
+        render json: gender_prefs
     end
 
     def show
@@ -16,7 +16,7 @@ class Api::V1::GenderPreferencesController < ApplicationController
     end
 
     def update
-        gender_pref = Diet.find(params[:id])
+        gender_pref = GenderPreference.find(params[:id])
         if gender_pref.update(gender_pref_params)
             render json: gender_pref
         else
@@ -33,6 +33,6 @@ class Api::V1::GenderPreferencesController < ApplicationController
     private
     
     def gender_pref_params
-        params.require(:gender_pref).permit(:male, :female, :non_binary, :none)
+        params.require(:gender_preference).permit(:male, :female, :non_binary, :none)
     end
 end

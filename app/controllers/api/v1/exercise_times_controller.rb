@@ -27,7 +27,7 @@ class Api::V1::ExerciseTimesController < ApplicationController
     def destroy
         excercise_time = ExerciseTime.find(params[:id])
         excercise_time.destroy
-        render json: { message: 'Discipline Entry Deleted'}
+        render json: { message: 'Exercise Time Entry Deleted'}
     end
 
     private

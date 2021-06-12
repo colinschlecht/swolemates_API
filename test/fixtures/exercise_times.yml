@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  early_morning: MyString
+  morning: MyString
+  afternoon: MyString
+  early_evening: MyString
+  late_evening: MyString
+  late_night: MyString
+
+two:
+  early_morning: MyString
+  morning: MyString
+  afternoon: MyString
+  early_evening: MyString
+  late_evening: MyString
+  late_night: MyString

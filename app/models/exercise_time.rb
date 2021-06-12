@@ -1,0 +1,2 @@
+class ExerciseTime < ApplicationRecord
+end

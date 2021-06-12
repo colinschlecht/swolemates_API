@@ -4,10 +4,8 @@ one:
   cardio: false
   muscle_strengthening: false
   aerobic: false
-  details: MyString
 
 two:
   cardio: false
   muscle_strengthening: false
   aerobic: false
-  details: MyString

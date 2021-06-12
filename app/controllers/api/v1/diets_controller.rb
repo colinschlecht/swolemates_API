@@ -1,5 +1,10 @@
 class Api::V1::DietsController < ApplicationController
 
+    def index
+        diets = Diet.all
+        render json:diets
+    end
+
     def show
         diet = Diet.find(params[:id])
         render json: diet
@@ -11,5 +16,6 @@ class Api::V1::DietsController < ApplicationController
     end
 
     def update
+        diet = 
     end
 end

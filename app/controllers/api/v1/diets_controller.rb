@@ -2,7 +2,7 @@ class Api::V1::DietsController < ApplicationController
 
     def index
         diets = Diet.all
-        render json:diets
+        render json: diets
     end
 
     def show

@@ -11,7 +11,7 @@ class Api::V1::ExerciseDisciplinesController < ApplicationController
     end
 
     def create
-        discipline = Diet.create(diet_params)
+        discipline = ExerciseDiscipline.create(discipline_params)
         render json: discipline
     end
 
@@ -33,6 +33,6 @@ class Api::V1::ExerciseDisciplinesController < ApplicationController
     private
 
     def discipline_params
-        params.require(:discipline).permit(:id, :cardio, :muscle_strengthening, :aerobic)
+        params.require(:exercise_discipline).permit(:cardio, :muscle_strengthening, :aerobic)
     end
 end

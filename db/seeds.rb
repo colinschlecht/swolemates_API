@@ -1,4 +1,5 @@
 def seed_users_and_attrs
+<<<<<<< HEAD
 gym_quotes = ['When my body shouts ‘STOP’, my mind screams ‘NEVER’.',
 'Excuses don’t kill the fat, exercises do.',
 'If you have time for Facebook, you have time for exercise.',
@@ -51,6 +52,9 @@ gym_quotes = ['When my body shouts ‘STOP’, my mind screams ‘NEVER’.',
 'If it wasn’t hard, everyone would do it.']
 
 
+=======
+  User.destroy_all
+>>>>>>> erik
 
   1000.times do
     random_boolean = [true, false].sample

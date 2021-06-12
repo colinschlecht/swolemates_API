@@ -11,8 +11,14 @@ class User < ApplicationRecord
   has_many :match_requests_as_receiver, foreign_key: :friend_id, class_name: :MatchRequest
 
   #? matched friend relationships
-  has_many :matches, ->(user){ where('user_id = ? OR friend_id = ?', user.id, user.id)}
+  has_many :matches
   has_many :friends, through: :matches
+  has_many :inverse_matches, foreign_key: :friend_id, class_name: 'Match'
+  has_many :inverse_friends, through: :inverse_matches, source: :user
+
+  def all_friends
+    self.friends + self.inverse_friends
+  end
 
   #? unmatched friend relationships
   has_many :unmatches

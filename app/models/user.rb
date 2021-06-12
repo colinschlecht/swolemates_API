@@ -7,5 +7,5 @@ class User < ApplicationRecord
   belongs_to :music_preference
 
   has_secure_password
-  validates :email, :presence: true
+  validates :email, presence: true
 end

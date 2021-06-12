@@ -15,7 +15,7 @@ class Api::V1::DietsController < ApplicationController
         render json: diet
     end
 
-    def update
-        diet = 
-    end
+    # def update
+    #     diet = 
+    # end
 end

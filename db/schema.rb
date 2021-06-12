@@ -108,6 +108,8 @@ ActiveRecord::Schema.define(version: 2021_06_12_042335) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
+    t.string "email"
+    t.string "password_diges"
     t.integer "age"
     t.string "gender"
     t.bigint "exercise_time_id", null: false

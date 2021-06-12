@@ -1,2 +1,0 @@
-class ExerciseFocu < ApplicationRecord
-end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_12_034241) do
+ActiveRecord::Schema.define(version: 2021_06_12_042335) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,11 +31,10 @@ ActiveRecord::Schema.define(version: 2021_06_12_034241) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "exercise_focus", force: :cascade do |t|
+  create_table "exercise_disciplines", force: :cascade do |t|
     t.boolean "cardio"
     t.boolean "muscle_strengthening"
     t.boolean "aerobic"
-    t.string "details"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -54,7 +53,7 @@ ActiveRecord::Schema.define(version: 2021_06_12_034241) do
   create_table "gender_preferences", force: :cascade do |t|
     t.boolean "male"
     t.boolean "female"
-    t.boolean "nonbinary"
+    t.boolean "non_binary"
     t.boolean "none"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -109,10 +108,13 @@ ActiveRecord::Schema.define(version: 2021_06_12_034241) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
+    t.string "email"
+    t.string "password_digest"
+    t.string "bio"
     t.integer "age"
     t.string "gender"
     t.bigint "exercise_time_id", null: false
-    t.bigint "exercise_focus_id", null: false
+    t.bigint "exercise_discipline_id", null: false
     t.bigint "diet_id", null: false
     t.bigint "gender_preference_id", null: false
     t.bigint "location_id", null: false
@@ -120,7 +122,7 @@ ActiveRecord::Schema.define(version: 2021_06_12_034241) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["diet_id"], name: "index_users_on_diet_id"
-    t.index ["exercise_focus_id"], name: "index_users_on_exercise_focus_id"
+    t.index ["exercise_discipline_id"], name: "index_users_on_exercise_discipline_id"
     t.index ["exercise_time_id"], name: "index_users_on_exercise_time_id"
     t.index ["gender_preference_id"], name: "index_users_on_gender_preference_id"
     t.index ["location_id"], name: "index_users_on_location_id"
@@ -131,7 +133,7 @@ ActiveRecord::Schema.define(version: 2021_06_12_034241) do
   add_foreign_key "matches", "users"
   add_foreign_key "unmatches", "users"
   add_foreign_key "users", "diets"
-  add_foreign_key "users", "exercise_focus", column: "exercise_focus_id"
+  add_foreign_key "users", "exercise_disciplines"
   add_foreign_key "users", "exercise_times"
   add_foreign_key "users", "gender_preferences"
   add_foreign_key "users", "locations"

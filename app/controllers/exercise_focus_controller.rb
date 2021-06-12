@@ -1,2 +1,0 @@
-class ExerciseFocusController < ApplicationController
-end

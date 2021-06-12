@@ -3,11 +3,11 @@
 one:
   male: false
   female: false
-  nonbinary: false
+  non-binary: false
   none: false
 
 two:
   male: false
   female: false
-  nonbinary: false
+  non-binary: false
   none: false

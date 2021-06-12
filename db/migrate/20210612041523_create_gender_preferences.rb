@@ -3,7 +3,7 @@ class CreateGenderPreferences < ActiveRecord::Migration[6.1]
     create_table :gender_preferences do |t|
       t.boolean :male
       t.boolean :female
-      t.boolean :nonbinary
+      t.boolean :non_binary
       t.boolean :none
 
       t.timestamps

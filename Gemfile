@@ -43,4 +43,8 @@ gem "active_model_serializers", "~> 0.10.12"
 gem 'dotenv'
 gem 'faker'
 gem 'jwt'
+# Generate a random lat long coordinate based on location. https://github.com/sauloperez/random-location/
 gem 'random-location'
+
+# Geocoder https://github.com/alexreisner/geocoder
+gem 'geocoder', '~> 1.6', '>= 1.6.7'

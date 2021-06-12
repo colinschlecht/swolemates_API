@@ -14,6 +14,10 @@ class User < ApplicationRecord
   has_many :matches, ->(user){ where('user_id = ? OR friend_id = ?', user.id, user.id)}
   has_many :friends, through: :matches
 
+  #? unmatched friend relationships
+  has_many :unmatches
+  has_many :unmatched_users, through: :unmatches
+
   has_secure_password
   validates :email, presence: true
 end

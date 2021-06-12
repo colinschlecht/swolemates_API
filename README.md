@@ -1,5 +1,10 @@
 # README
 
+
+https://github.com/colinschlecht/swolemates_API
+https://github.com/colinschlecht/swole_client
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 

@@ -33,6 +33,6 @@ class Api::V1::ExerciseDisciplinesController < ApplicationController
     private
 
     def discipline_params
-        params.require(:discipline).permit(:cardio, :muscle_strengthening, :aerobic)
+        params.require(:discipline).permit(:id, :cardio, :muscle_strengthening, :aerobic)
     end
 end

@@ -33,6 +33,6 @@ class Api::V1::DietsController < ApplicationController
     private
 
     def diet_params
-        params.require(:diet).permit(:keto, :low_carb, :vegan, :vegetarian, :pescatarian, :alkaline, :raw_food, :intermittent_fasting, :paleo, :clean_eating, :mediterranean)
+        params.require(:diet).permit(:id, :keto, :low_carb, :vegan, :vegetarian, :pescatarian, :alkaline, :raw_food, :intermittent_fasting, :paleo, :clean_eating, :mediterranean)
     end
 end

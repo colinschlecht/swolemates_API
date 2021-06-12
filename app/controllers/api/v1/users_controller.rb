@@ -2,7 +2,7 @@ class Api::V1::UsersController < ApplicationController
   skip_before_action :authorized, only: [:create, :index, :show, :profile]
 
   def index
-      users = User.all
+      users = User.all.limit(20)
       render json: users
   end
 

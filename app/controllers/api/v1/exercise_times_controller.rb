@@ -2,12 +2,12 @@ class Api::V1::ExerciseTimesController < ApplicationController
         
     def index
         exercise_times = ExerciseTime.all
-        render json: excercise_times
+        render json: exercise_times
     end
 
     def show
         exercise_time = ExerciseTime.find(params[:id])
-        render json: excercise_time
+        render json: exercise_time
     end
 
     def create

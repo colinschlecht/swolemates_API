@@ -1,3 +1,3 @@
 class GenderPreferenceSerializer < ActiveModel::Serializer
-  attributes :id, :male, :female, :"non-binary", :none
+  attributes :id, :male, :female, :non_binary, :none
 end

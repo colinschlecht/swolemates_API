@@ -17,6 +17,7 @@ class Api::V1::LocationsController < ApplicationController
 
     def update
         location = Location.find(params[:id])
+        if location.update(location_params)
             render json: location
         else 
             render json: {message: 'error!!'}

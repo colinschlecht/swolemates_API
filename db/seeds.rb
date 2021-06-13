@@ -1,7 +1,7 @@
 #! Note - Location for users is provided via a gem that takes a second to run. This seed file takes a while to process, so I added a logger in config/application.rb to show that it isn't frozen.
 #! Also Note - Location is hard coded to "Seattle.". You can run the seed file with another city name and it will generate users nearby using that city's latitude and longitude.
 
-User.destroy_all
+# User.destroy_all
 
 def seed_users_and_attrs
   gym_quotes = ["When my body shouts ‘STOP’, my mind screams ‘NEVER’.",

@@ -40,7 +40,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "active_model_serializers", "~> 0.10.12"
-gem 'dotenv'
+gem 'dotenv-rails'
 gem 'faker'
 gem 'jwt'
 # Generate a random lat long coordinate based on location. https://github.com/sauloperez/random-location/

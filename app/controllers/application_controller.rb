@@ -1,10 +1,10 @@
 class ApplicationController < ActionController::API
   # before_action :authorized
 
-  # SECRET = ENV["JWT_SECRET"]
+  SECRET = ENV["JWT_TOKEN_KEY"]
 
   def encode_token(payload)
-    JWT.encode(payload, "SECRET")
+    JWT.encode(payload, SECRET)
   end
 
   def auth_header
@@ -16,7 +16,7 @@ class ApplicationController < ActionController::API
       token = auth_header.split(" ")[1]
 
       begin
-        JWT.decode(token, "SECRET", true, algorithm: "HS256")
+        JWT.decode(token, SECRET, true, algorithm: "HS256")
       rescue JWT::DecodeError
         nil
       end

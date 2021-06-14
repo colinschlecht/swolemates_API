@@ -21,6 +21,7 @@ Bundler.require(*Rails.groups)
 
 ActiveRecord::Base.logger = ActiveSupport::Logger.new(STDOUT)
 
+# Dotenv::Railtie.load
 module Swolebackend
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
